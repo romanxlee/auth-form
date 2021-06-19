@@ -1,19 +1,19 @@
 <template>
   <div id="app" class="container">
     <VNavbar />
-    <VPost />
+    <PostsList />
   </div>
 </template>
 
 <script>
 import VNavbar from '@/components/VNavbar'
-import VPost from '@/components/VPost'
+import PostsList from '@/components/PostsList'
 
 export default {
   name: 'App',
   components: {
     VNavbar,
-    VPost
+    PostsList
   }
 }
 </script>
