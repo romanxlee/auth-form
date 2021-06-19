@@ -1,8 +1,13 @@
 <template>
   <div id="app" class="container">
-    <VNavbar />
+    <VNavbar
+      @modal-open="modalOpen = true"
+    />
     <PostsList />
-    <VModal />
+    <VModal
+      :class="{ 'is-active' : modalOpen}"
+      @modal-close="modalOpen = false"
+    />
   </div>
 </template>
 
@@ -13,6 +18,11 @@ import VModal from '@/components/VModal'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      modalOpen: false
+    }
+  },
   components: {
     VNavbar,
     PostsList,

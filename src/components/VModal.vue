@@ -20,13 +20,18 @@
         </div>
 
         <label class="checkbox">
-  <input type="checkbox">
-  Remember me
-</label>
+          <input type="checkbox">
+          Remember me
+        </label>
       </section>
+      <button class="button"
+        label="Login"
+        type="is-primary">
+        Login
+      </button>
       </div>
     </div>
-    <button class="modal-close is-large" aria-label="close"></button>
+    <button @click="$emit('modal-close')" class="modal-close is-large" aria-label="close"></button>
   </div>
 </template>
 
