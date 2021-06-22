@@ -2,8 +2,13 @@
   <div class="card">
     <h2 class="card-header-title">{{postData.title}}</h2>
     <div class="card-content">
-      <div class="content">{{postData.description}}.</div>
-      <div class="content" @click="clapPost(postData.id)">Количество хлопков: {{postData.claps}}</div>
+      <div class="content">{{postData.description}}</div>
+      <button v-if="this.$store.state.role === 'reader'" class="button" @click="clapPost(postData.id)">
+        <figure class="image is-24x24">
+          <img src="../assets/claps.png">
+        </figure>
+        {{postData.claps}}
+      </button>
     </div>
     <div class="card-footer">{{postData.createdAt.toLocaleString('ru', {hour: 'numeric', minute: 'numeric', second: 'numeric'})}}</div>
   </div>
