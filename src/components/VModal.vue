@@ -6,7 +6,6 @@
       <section class="modal-card-body">
         <div class="field" label="Email">
           <input
-            @input="createObjectMail(email)"
             v-model="email"
             type="email"
             placeholder="Your email"
@@ -16,7 +15,6 @@
 
         <div class="field" label="Password">
           <input
-            @input="createObjectPass(password)"
             v-model="password"
             type="password"
             password-reveal

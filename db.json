@@ -17,7 +17,7 @@
     {
       "id": 1,
       "title": "Название поста",
-      "description": "Текст",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis nunc at arcu finibus, at congue ligula posuere. Sed euismod ante a nibh vulputate, id semper sem ultricies. Maecenas ut tempor ante, at aliquet nisl. Phasellus finibus augue eget nibh accumsan laoreet. Integer ultricies, magna in varius imperdiet, ligula quam fermentum purus, vitae sagittis mi tortor et lectus. Pellentesque gravida ipsum sit amet ligula varius, eget lobortis magna finibus. Maecenas finibus elit eros. Proin ut nibh gravida, imperdiet orci eget, suscipit justo. Morbi nec condimentum libero. Aenean imperdiet justo sed mattis aliquam. Donec bibendum arcu a neque gravida facilisis. Ut sed molestie ante. Etiam volutpat leo tincidunt tincidunt aliquam.",
       "claps": 9,
       "createdAt": "2019-09-29T00:00:00.000Z",
       "updateAt": "2019-09-29T00:00:00.000Z",
@@ -26,7 +26,7 @@
     {
       "id": 2,
       "title": "Название поста",
-      "description": "Текст",
+      "description": "Nullam posuere ultricies vehicula. Sed dui neque, consequat et risus tristique, placerat tempus sapien. Cras id faucibus sapien, eget auctor purus. Proin cursus hendrerit rhoncus. Cras eu nunc molestie, placerat purus et, pharetra lacus. Suspendisse in enim molestie, egestas tortor ut, pretium dolor. Morbi ac risus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut aliquet et turpis at bibendum. Nunc condimentum accumsan euismod. Quisque leo dui, varius at mi congue, laoreet commodo massa. Fusce pulvinar nulla vitae cursus eleifend. Praesent viverra eget est eu volutpat.",
       "claps": 11,
       "createdAt": "2019-09-29T00:00:00.000Z",
       "updateAt": "2021-06-19T22:17:36.666Z",
