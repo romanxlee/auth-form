@@ -19,7 +19,7 @@ export default {
   methods: {
     clapPost(postId) {
       axios.patch('http://localhost:3000/posts/' + postId, {
-        claps: this.postData.claps ++
+        claps: this.postData.claps +=1
       })
     }
   }

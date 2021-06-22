@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+import store from '@/store'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import App from './App.vue'
@@ -7,7 +7,7 @@ import App from './App.vue'
 Vue.config.productionTip = false
 
 new Vue({
-  Vuex,
   Buefy,
+  store,
   render: h => h(App),
 }).$mount('#app')

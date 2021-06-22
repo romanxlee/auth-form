@@ -5,26 +5,28 @@
       <div class="modal-card">
       <section class="modal-card-body">
         <div class="field" label="Email">
-            <input
-                type="email"
-                placeholder="Your email"
-                required>
+          <input
+            @input="createObjectMail(email)"
+            v-model="email"
+            type="email"
+            placeholder="Your email"
+            required
+          >
         </div>
 
         <div class="field" label="Password">
-            <input
-                type="password"
-                password-reveal
-                placeholder="Your password"
-                required>
+          <input
+            @input="createObjectPass(password)"
+            v-model="password"
+            type="password"
+            password-reveal
+            placeholder="Your password"
+            required
+          >
         </div>
-
-        <label class="checkbox">
-          <input type="checkbox">
-          Remember me
-        </label>
       </section>
-      <button class="button"
+
+      <button @click="logIn" class="button"
         label="Login"
         type="is-primary">
         Login
@@ -36,7 +38,33 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+      regData: []
+    }
+  },
+  methods: {
+    logIn() {
+      for (let i = 0; i < this.regData.length; i++) {
+        if (this.regData[i].login == this.email && this.regData[i].password == this.password) {
+        this.$store.commit('role', this.regData[i].role)
+        this.$emit('modal-close')
+      }}
+    },
+  },
+  mounted() {
+    return axios.get('http://localhost:3000/users')
+    .then(res => this.regData = res.data)
+    /* .then(res => res.data.forEach(item => {
+      this.mailsList.push(item.login)
+      this.passList.push(item.password)
+    })) */
+  }
 }
 </script>
 
