@@ -44,12 +44,6 @@ export default {
     description: String,
     number: Number
   },
-  /* data() {
-    return {
-      postTitle: this.title,
-      postDescription: this.description
-    }
-  }, */
   methods: {
     editPost() {
       axios.patch('http://localhost:3000/posts/' + this.number, {

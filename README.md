@@ -1,24 +1,18 @@
 # auth-form
+Прототип аутентификации   
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Функционал:    
+Авторизация, добавление и удалиение постов.   
 
-### Compiles and minifies for production
-```
-npm run build
-```
+# Использованые технлогии:   
+Vue, VueX
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Установка   
+1. Скопируйте репозиторий  `git clone https://github.com/romanxlee/auth-form.git`
+2. Установите зависимости `npm install`
+3. Для сборки используйте:   
+`npm run serve` во время разработки   
+`json-server --watch db.json` для запуска фейкового апи   
+`npm run build` для запуска в продакшн   
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
