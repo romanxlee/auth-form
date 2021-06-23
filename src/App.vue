@@ -1,12 +1,17 @@
 <template>
   <div id="app" class="container">
     <VNavbar
-      @modal-open="modalOpen = true"
+      @modal-login-open="modalLoginOpen = true"
+      @modal-add-open="modalAddOpen = true"
     />
     <PostsList />
-    <VModal
-      :class="{ 'is-active' : modalOpen}"
-      @modal-close="modalOpen = false"
+    <ModalLogin
+      :class="{ 'is-active' : modalLoginOpen}"
+      @modal-close="modalLoginOpen = false"
+    />
+    <ModalAddPost
+      :class="{ 'is-active': modalAddOpen}"
+      @modal-close="modalAddOpen = false"
     />
   </div>
 </template>
@@ -14,19 +19,22 @@
 <script>
 import VNavbar from '@/components/VNavbar'
 import PostsList from '@/components/PostsList'
-import VModal from '@/components/VModal'
+import ModalLogin from '@/components/ModalLogin'
+import ModalAddPost from '@/components/ModalAddPost'
 
 export default {
   name: 'App',
   data() {
     return {
-      modalOpen: false
+      modalLoginOpen: false,
+      modalAddOpen: false
     }
   },
   components: {
     VNavbar,
     PostsList,
-    VModal
+    ModalLogin,
+    ModalAddPost
   }
 }
 </script>

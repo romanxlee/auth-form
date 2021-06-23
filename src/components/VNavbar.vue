@@ -1,11 +1,16 @@
 <template>
   <nav class="navbar is-info">
-    <a v-if="this.$store.state.role==='guest'" class="navbar-item navbar-end is-light"
-      @click="$emit('modal-open')"
+    <a class="navbar-item navbar-end"
+      @click="$emit('modal-add-open')"
+    >
+      Add Post
+    </a>
+    <a v-if="this.$store.state.role==='guest'" class="navbar-item navbar-end"
+      @click="$emit('modal-login-open')"
     >
       Login
     </a>
-    <a v-else class="navbar-item navbar-end is-light"
+    <a v-else class="navbar-item navbar-end"
       @click="logOut"
     >
       Logout
