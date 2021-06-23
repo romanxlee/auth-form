@@ -5,6 +5,7 @@
       :key="post.id"
       :postData="post"
       @delete-post="deletePost"
+      @edit-post="$emit('edit-post', post.title, post.description, post.postNumber)"
     />
   </div>
 </template>
@@ -16,7 +17,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      posts: []
+      posts: [],
     }
   },
   components: {

@@ -9,6 +9,12 @@
         </figure>
         {{postData.claps}}
       </button>
+      <button
+      v-if="this.$store.state.role === 'writer'"
+      @click="$emit('edit-post', postData.title, postData.description, postData.postNumber)"
+      class="button">
+        Edit
+      </button>
       <button v-if="this.$store.state.role === 'writer'" @click="$emit('delete-post', postData.postNumber)" class="button">
         Delete
       </button>

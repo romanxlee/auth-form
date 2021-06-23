@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar is-info">
-    <a class="navbar-item navbar-end"
+    <a v-if="this.$store.state.role==='writer'" class="navbar-item navbar-end"
       @click="$emit('modal-add-open')"
     >
       Add Post
