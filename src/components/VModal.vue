@@ -58,10 +58,6 @@ export default {
   mounted() {
     return axios.get('http://localhost:3000/users')
     .then(res => this.regData = res.data)
-    /* .then(res => res.data.forEach(item => {
-      this.mailsList.push(item.login)
-      this.passList.push(item.password)
-    })) */
   }
 }
 </script>

@@ -9,6 +9,9 @@
         </figure>
         {{postData.claps}}
       </button>
+      <button v-if="this.$store.state.role === 'writer'" @click="$emit('delete-post', postData.id)" class="button">
+        Delete
+      </button>
     </div>
     <div class="card-footer">{{postData.createdAt.toLocaleString('ru', {hour: 'numeric', minute: 'numeric', second: 'numeric'})}}</div>
   </div>
@@ -26,7 +29,7 @@ export default {
       axios.patch('http://localhost:3000/posts/' + postId, {
         claps: this.postData.claps +=1
       })
-    }
+    },
   }
 }
 </script>
