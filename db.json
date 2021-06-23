@@ -18,19 +18,19 @@
       "id": 1,
       "title": "Название поста1",
       "description": "Nullam posuere ultricies vehicula. Sed dui neque, consequat et risus tristique, placerat tempus sapien. Cras id faucibus sapien, eget auctor purus. Proin cursus hendrerit rhoncus. Cras eu nunc molestie, placerat purus et, pharetra lacus. Suspendisse in enim molestie, egestas tortor ut, pretium dolor. Morbi ac risus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut aliquet et turpis at bibendum. Nunc condimentum accumsan euismod. Quisque leo dui, varius at mi congue, laoreet commodo massa. Fusce pulvinar nulla vitae cursus eleifend. Praesent viverra eget est eu volutpat.",
-      "claps": 21,
+      "claps": 26,
       "createdAt": "2019-09-29T00:00:00.000Z",
       "updateAt": "2021-06-19T22:17:36.666Z",
-      "userId": 1
+      "postNumber": 1
     },
     {
       "id": 2,
       "title": "Название поста2",
       "description": "Nullam posuere ultricies vehicula. Sed dui neque, consequat et risus tristique, placerat tempus sapien. Cras id faucibus sapien, eget auctor purus. Proin cursus hendrerit rhoncus. Cras eu nunc molestie, placerat purus et, pharetra lacus. Suspendisse in enim molestie, egestas tortor ut, pretium dolor. Morbi ac risus ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut aliquet et turpis at bibendum. Nunc condimentum accumsan euismod. Quisque leo dui, varius at mi congue, laoreet commodo massa. Fusce pulvinar nulla vitae cursus eleifend. Praesent viverra eget est eu volutpat.",
-      "claps": 20,
+      "claps": 25,
       "createdAt": "2019-09-29T00:00:00.000Z",
       "updateAt": "2021-06-19T22:17:36.666Z",
-      "userId": 2
+      "postNumber": 2
     }
   ]
 }

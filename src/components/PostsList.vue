@@ -1,7 +1,7 @@
 <template>
   <div class="posts container">
     <VPost
-      v-for="post in posts"
+      v-for="post in newPosts"
       :key="post.id"
       :postData="post"
       @delete-post="deletePost"

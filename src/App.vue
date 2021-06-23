@@ -4,7 +4,7 @@
       @modal-login-open="modalLoginOpen = true"
       @modal-add-open="modalAddOpen = true"
     />
-    <PostsList />
+    <PostsList :key="addPost"/>
     <ModalLogin
       :class="{ 'is-active' : modalLoginOpen}"
       @modal-close="modalLoginOpen = false"
@@ -12,6 +12,7 @@
     <ModalAddPost
       :class="{ 'is-active': modalAddOpen}"
       @modal-close="modalAddOpen = false"
+      @add-post="addPost = !addPost"
     />
   </div>
 </template>
@@ -26,8 +27,10 @@ export default {
   name: 'App',
   data() {
     return {
+      posts: [],
       modalLoginOpen: false,
-      modalAddOpen: false
+      modalAddOpen: false,
+      addPost: false
     }
   },
   components: {
@@ -35,7 +38,7 @@ export default {
     PostsList,
     ModalLogin,
     ModalAddPost
-  }
+  },
 }
 </script>
 

@@ -23,7 +23,9 @@
         </div>
       </section>
 
-      <button class="button"
+      <button
+        @click="addPost"
+        class="button"
         label="Add"
         type="is-primary">
         Add
@@ -45,7 +47,17 @@ export default {
   },
   methods: {
     addPost() {
-      axios.post('http://localhost:3000/posts')
+      axios.post('http://localhost:3000/posts', {
+        id: Date.now(),
+        title: this.title,
+        description: this.description,
+        claps: 0,
+        createdAt: "2019-09-29T00:00:00.000Z",
+        updateAt: "2021-06-19T22:17:36.666Z",
+        postNumber: Date.now()
+      })
+      this.$emit('modal-close')
+      this.$emit('add-post')
     }
   }
 }
