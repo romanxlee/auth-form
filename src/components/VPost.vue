@@ -19,7 +19,7 @@
         Delete
       </button>
     </div>
-    <div class="card-footer">{{postData.createdAt.toLocaleString('ru', {hour: 'numeric', minute: 'numeric', second: 'numeric'})}}</div>
+    <div class="card-footer">{{postData.createdAt}}</div>
   </div>
 </template>
 

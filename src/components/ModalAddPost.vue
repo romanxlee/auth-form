@@ -52,8 +52,8 @@ export default {
         title: this.title,
         description: this.description,
         claps: 0,
-        createdAt: "2019-09-29T00:00:00.000Z",
-        updateAt: "2021-06-19T22:17:36.666Z",
+        createdAt: new Date().toLocaleString('ru', {day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'}),
+        updateAt: new Date().toLocaleString('ru', {day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'}),
         postNumber: Date.now()
       })
       this.$emit('modal-close')
